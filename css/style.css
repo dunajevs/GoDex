@@ -531,6 +531,9 @@ label, input, textarea{
   .topnav-right {
     width:100%;
     text-align:center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .topnav-right a {
     display:block;

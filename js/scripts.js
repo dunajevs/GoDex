@@ -188,12 +188,12 @@ function topFunction() {
 
 function menu() {
   var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
+  if (x.style.display === "flex") {
     x.style.display = "none";
     document.getElementById("line-break").style.display = "none";
   } else {
-    x.style.display = "block";
-    document.getElementById("line-break").style.display = "block";
+    x.style.display = "flex";
+    document.getElementById("line-break").style.display = "flex";
   }
 }
 

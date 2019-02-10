@@ -10,12 +10,12 @@
     gtag('config', 'UA-123581449-1');
     function menu() {
       var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
+      if (x.style.display === "flex") {
         x.style.display = "none";
         document.getElementById("line-break").style.display = "none";
       } else {
-        x.style.display = "block";
-        document.getElementById("line-break").style.display = "block";
+        x.style.display = "flex";
+        document.getElementById("line-break").style.display = "flex";
       }
     }
     function confirmation() {
@@ -46,23 +46,12 @@
       </a>
       <div class="line-break" id="line-break"></div>
       <div class="topnav-right" id="myLinks">
-        <div class="dropdown">
-          <button class="dropbtn"><i class="fas fa-chevron-circle-down fa-lg"></i>
-          </button>
-          <div class="dropdown-content">
-          <a href="100" title="100%">💯100%</a>
-          <a href="gender" title="Gender">🚻Gender (WIP)</a>
-          <a href="lucky" title="Lucky">✨Lucky</a>
-          </div>
-        </div>
-        <div class="mobileNav">
-          <a href="100" title="100%">💯100%</a>
-          <a href="gender" title="Gender">🚻Gender (WIP)</a>
-          <a href="lucky" title="Lucky">✨Lucky</a>
-        </div>
+        <a href="100" title="100%"><i class="fas fa-gem fa-lg"></i></a>
+        <a href="gender" title="Gender"><i class="fas fa-restroom fa-lg"></i></a>
+        <a href="lucky" title="Lucky"><i class="fas fa-star fa-lg"></i></a>
         <a href="support" title="Help"><i class="fas fa-question-circle fa-lg"></i></a>
         <a href="https://twitter.com/GoDexOnline" title="Updates"><i class="fab fa-twitter fa-lg"></i></a>
-        <a href="https://ko-fi.com/dunajevs"title="Ko-fi" style="display:inline-block;"><i class="fas fa-mug-hot fa-lg"></i></a>
+        <a href="https://paypal.me/ndunajevs"title="PayPal" style="display:inline-block;"><i class="fas fa-donate fa-lg"></i></a>
       </div>
   </div>
 
@@ -71,15 +60,22 @@
         <h2>What's a GoDex?</h2>
         <p>GoDex is an online Pokedex checklist for Pokemon GO. Use it to keep track of your Pokemon collection outside of the game.</p>
         <h2>How does it work?</h2>
-        <p>Just tick off all the Pokemon you have so that you can see all the ones you still need.</p>
-        <h2>What does the "Hide" button do?</h2>
-        <p>It hides the Pokemon that you ticked off so that you only see the ones you still need.</p>
-        <h2>How can I save my selections?</h2>
-        <p>All your changes are automatically saved in your browser!</p>
-        <h2>Can I transfer my collection to another device?</h2>
-        <p>Yes, at the moment you have to press the "Export" button which will copy your unique code, send this code to another device and press the "Import" button to paste it in.</p>
+        <p>Just tick off all the Pokemon you have so that you can see all the ones you still need. All of your changes are saved automatically, neat huh.</p>
+        <h2>What do the different menu buttons do?</h2>
+        <p>
+          <i class="fas fa-gem fa-lg"></i>  -  A page for keeping track of your 100% Pokemon.<br><br>
+          <i class="fas fa-restroom fa-lg"></i>  -  A page for keeping track of your Pokemon of different gender.<br><br>
+          <i class="fas fa-star fa-lg"></i>  -  A page for keeping track of your lucky Pokemon.<br><br>
+          <i class="fas fa-eye-slash fa-lg"></i>  -  Hides the Pokemon that you ticked off so that you only see the ones you still need.<br><br>
+          <i class="fas fa-percent fa-lg"></i>  -  Shows you Pokedex completion percentages of all the pages.<br><br>
+          <i class="fas fa-file-export fa-lg"></i>  -  Generates a unique code for your collectiom which allows you to save it or maybe import this code on another device.<br><br>
+          <i class="fas fa-file-import fa-lg"></i>  -  For loading your save code.<br><br>
+          <i class="fas fa-question-circle fa-lg"></i>  -  This very helpful page.<br><br>
+          <i class="fab fa-twitter fa-lg"></i>  -  Opens twitter page for the website where I post updates about this website.<br><br>
+          <i class="fas fa-donate  fa-lg"></i>  -  A page where you can donate in order to support me :)
+        </p>
         <h2>This website is amazing how can I express my appreciation? :D</h2>
-        <p>You can send me a few nice words down below or tweet <a href="https://twitter.com/GoDexOnline">@GoDexOnline</a>, alternatively, if you're feeling extra generous, you can <a href="https://ko-fi.com/dunajevs">buy me a coffee!</a> I don't want to run ads on the website so I would really appreciate it.</p>
+        <p>You can send me a few nice words down below or tweet <a href="https://twitter.com/GoDexOnline">@GoDexOnline</a>, alternatively, if you're feeling extra generous, you can <a href="https://paypal.me/ndunajevs">donate here!</a> I don't want to run ads on the website so I would really appreciate it.</p>
         <h2>What if my question is not answered here or I want to suggest something or report a bug?</h2>
         <p>Then please send me an email down below :)</p>
       <form id="supForm" action="https://formspree.io/godexsup@gmail.com" method="POST">
