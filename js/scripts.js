@@ -375,6 +375,7 @@ var PokedexService = /** @class */ (function () {
           { "id": "172-party", "name": "Party Pichu" },
           { "id": "172-halloween", "name": "Witch Pichu" },
           { "id": "172-santa", "name": "Santa Pichu" },
+          { "id": "173", "name": "Cleffa" },
           { "id": "175", "name": "Togepi" },
           { "id": "176", "name": "Togetic" },
           { "id": "177", "name": "Natu" },
@@ -398,6 +399,7 @@ var PokedexService = /** @class */ (function () {
           { "id": "225", "name": "Delibird" },
           { "id": "228", "name": "Houndour" },
           { "id": "229", "name": "Houndoom" },
+          { "id": "238", "name": "Smoochum" },
           { "id": "239", "name": "Elekid" },
           { "id": "240", "name": "Magby" },
           { "id": "246", "name": "Larvitar" },
@@ -510,7 +512,8 @@ var PokedexService = /** @class */ (function () {
           { "id": "327-5", "name": "#5" },
           { "id": "327-6", "name": "#6" },
           { "id": "327-7", "name": "#7" },
-          { "id": "327-8", "name": "#8" }];
+          { "id": "327-8", "name": "#8" },
+          { "id": "327-9", "name": "#9" }];
         this.deoxys = [{ "id": "386", "name": "Normal" },
           { "id": "386-a", "name": "Attack Forme" }];
         this.unowns = [{ "id": "201-a", "name": "A" },
@@ -972,6 +975,7 @@ var PokedexService = /** @class */ (function () {
           { "id": "436", "name": "Bronzor" },
           { "id": "437", "name": "Bronzong" },
           { "id": "438", "name": "Bonsly" },
+          { "id": "440", "name": "Happiny" },
           { "id": "441", "name": "Chatot" },
           { "id": "442", "name": "Spiritomb" },
           { "id": "446", "name": "Munchlax" },
