@@ -449,6 +449,9 @@ var PokedexService = /** @class */ (function () {
           { "id": "360", "name": "Wynaut" },
           { "id": "361", "name": "Snorunt" },
           { "id": "362", "name": "Glaile" },
+          { "id": "366", "name": "Clamperl" },
+          { "id": "367", "name": "Huntail" },
+          { "id": "368", "name": "Gorebyss" },
           { "id": "370", "name": "Luvdisk" },
           { "id": "374", "name": "Beldum" },
           { "id": "375", "name": "Metang" },
@@ -552,9 +555,6 @@ var PokedexService = /** @class */ (function () {
           { "id": "201-qm", "name": "?" }];
         this.unavailable = [ { "id": "235", "name": "Smeargle" },
           { "id": "352", "name": "Kecleon" },
-          { "id": "366", "name": "Clamperl" },
-          { "id": "367", "name": "Huntail" },
-          { "id": "368", "name": "Gorebyss" },
           { "id": "385", "name": "Jirachi" }];
         this.gen1 = [{ "id": "001", "name": "Bulbasaur" },
           { "id": "002", "name": "Ivysaur" },
@@ -919,6 +919,9 @@ var PokedexService = /** @class */ (function () {
           { "id": "363", "name": "Spheal" },
           { "id": "364", "name": "Sealeo" },
           { "id": "365", "name": "Walrein" },
+          { "id": "366", "name": "Clamperl" },
+          { "id": "367", "name": "Huntail" },
+          { "id": "368", "name": "Gorebyss" },
           { "id": "369", "name": "Relicanth" },
           { "id": "370", "name": "Luvdisc" },
           { "id": "371", "name": "Bagon" },
@@ -1230,12 +1233,6 @@ var PokedexService = /** @class */ (function () {
           { "id": "362-f", "name": "Glaile" },
           { "id": "370-m", "name": "Luvdisk ♂" },
           { "id": "370-f", "name": "Luvdisk" }];
-          //{ "id": "403", "name": "Shinx" },
-          //{ "id": "404", "name": "Luxio" },
-          //{ "id": "405", "name": "Luxray" },
-          //{ "id": "406", "name": "Budew" },
-          //{ "id": "425", "name": "Drifloon" },
-          //{ "id": "426", "name": "Drifblim" }];
         this.genderSpecial = [{ "id": "172-santa-m", "name": "Santa Pichu ♂" },
           { "id": "172-santa-f", "name": "Santa Pichu ♀" },
           { "id": "025-santa-m", "name": "Santa Pikachu ♂" },
