@@ -553,8 +553,7 @@ var PokedexService = /** @class */ (function () {
           { "id": "201-z", "name": "Z" },
           { "id": "201-em", "name": "!" },
           { "id": "201-qm", "name": "?" }];
-        this.unavailable = [ { "id": "235", "name": "Smeargle" },
-          { "id": "352", "name": "Kecleon" },
+        this.unavailable = [ { "id": "352", "name": "Kecleon" },
           { "id": "385", "name": "Jirachi" }];
         this.gen1 = [{ "id": "001", "name": "Bulbasaur" },
           { "id": "002", "name": "Ivysaur" },
@@ -790,6 +789,7 @@ var PokedexService = /** @class */ (function () {
           { "id": "232", "name": "Donphan" },
           { "id": "233", "name": "Porygon2" },
           { "id": "234", "name": "Stantler" },
+          { "id": "235", "name": "Smeargle" },
           { "id": "236", "name": "Tyrogue" },
           { "id": "237", "name": "Hitmontop" },
           { "id": "238", "name": "Smoochum" },
@@ -1667,6 +1667,8 @@ var PokedexService = /** @class */ (function () {
           { "id": "231-m", "name": "Phanpy ♂" },
           { "id": "232-m", "name": "Donphan ♂" },
           { "id": "234-m", "name": "Stantler ♂" },
+          { "id": "235-m", "name": "Smeargle ♂" },
+          { "id": "235-f", "name": "Smeargle ♀" },
           { "id": "236-m", "name": "Tyrogue ♂" },
           { "id": "237-m", "name": "Hitmontop ♂" },
           { "id": "238-f", "name": "Smoochum ♀" },
