@@ -40,7 +40,7 @@ $(document).ready(function () {
         document.getElementById(num).parentElement.style.display = 'none';
       }
     })
-    if (page == '' || page == 'index.html' || page == 'index') {
+    if (page == '' || page == 'index.html' || page == 'index' || page == 'lucky.html' || page == 'lucky' || page == '100.html'|| page == '100' || page == 'gender' || page == 'gender.html') {
       var checkedBoxes = document.querySelectorAll('input[name=dex]:checked');
       var pokemonNum = $('input[name=dex]').length;
       var width = Math.round(checkedBoxes.length / pokemonNum * 10000) / 100;
@@ -68,7 +68,7 @@ $(document).ready(function () {
     else {
       document.getElementById(num).style.backgroundColor = "#D3D3D3";
     }
-    if (page == '' || page == 'index.html' || page == 'index') {
+    if (page == '' || page == 'index.html' || page == 'index' || page == 'lucky.html' || page == 'lucky' || page == '100.html'|| page == '100' || page == 'gender' || page == 'gender.html') {
       var checkedBoxes = document.querySelectorAll('input[name=dex]:checked');
       var pokemonNum = $('input[name=dex]').length;
       var width = Math.round(checkedBoxes.length / pokemonNum * 10000) / 100;
@@ -85,14 +85,29 @@ $(window).on("click", function(e) {
   }
 });
 $(btn).on("click", function() {
-   modal.style.display = "block";
-   document.getElementById("modalText").innerHTML = "<h1>Pokedex Completion</h1> <h2>Normal: " + stats("dex") + "</h2> <div class='progress'>    <div class='progress-bar progress-bar-striped active' role='progressbar' style='width:" + roundPercent("dex")+"%'>" + percentage("dex") +  "% </div>  </div>" +
-                                                                      "<h2>Shiny: " + stats("shiny") + "</h2> <div class='progress'>    <div class='progress-bar progress-bar-striped active' role='progressbar' style='width:" + roundPercent("shiny")+"%'>" + percentage("shiny") +  "% </div>  </div>" +
-                                                                      "<h2>Special: " + stats("special") + "</h2> <div class='progress'>    <div class='progress-bar progress-bar-striped active' role='progressbar' style='width:" + roundPercent("special")+"%'>" + percentage("special") +  "% </div>  </div>" +
-                                                                      "<h2>Alolan: " + stats("alolan") + "</h2> <div class='progress'>    <div class='progress-bar progress-bar-striped active' role='progressbar' style='width:" + roundPercent("alolan")+"%'>" + percentage("alolan") +  "% </div>  </div>" +
-                                                                      "<h2>Spinda: " + stats("spinda") + "</h2> <div class='progress'>    <div class='progress-bar progress-bar-striped active' role='progressbar' style='width:" + roundPercent("spinda")+"%'>" + percentage("spinda") +  "% </div>  </div>" +
-                                                                      "<h2>Deoxys: " + stats("deoxys") + "</h2> <div class='progress'>    <div class='progress-bar progress-bar-striped active' role='progressbar' style='width:" + roundPercent("deoxys")+"%'>" + percentage("deoxys") +  "% </div>  </div>" +
-                                                                      "<h2>Unown: " + stats("unown") + "</h2> <div class='progress'>    <div class='progress-bar progress-bar-striped active' role='progressbar' style='width:" + roundPercent("unown")+"%'>" + percentage("unown") +  "% </div>  </div>";
+  if (page == '' || page == 'index.html' || page == 'index' || page == '100.html'|| page == '100') {
+    modalContent ="<h1>Pokedex Completion</h1> <h2>Normal: " + stats("dex") + "</h2> <div class='progress'>    <div class='progress-bar progress-bar-striped active' role='progressbar' style='width:" + roundPercent("dex")+"%'>" + percentage("dex") +  "% </div>  </div>" +
+                                                                       "<h2>Shiny: " + stats("shiny") + "</h2> <div class='progress'>    <div class='progress-bar progress-bar-striped active' role='progressbar' style='width:" + roundPercent("shiny")+"%'>" + percentage("shiny") +  "% </div>  </div>" +
+                                                                       "<h2>Special: " + stats("special") + "</h2> <div class='progress'>    <div class='progress-bar progress-bar-striped active' role='progressbar' style='width:" + roundPercent("special")+"%'>" + percentage("special") +  "% </div>  </div>" +
+                                                                       "<h2>Alolan: " + stats("alolan") + "</h2> <div class='progress'>    <div class='progress-bar progress-bar-striped active' role='progressbar' style='width:" + roundPercent("alolan")+"%'>" + percentage("alolan") +  "% </div>  </div>" +
+                                                                       "<h2>Spinda: " + stats("spinda") + "</h2> <div class='progress'>    <div class='progress-bar progress-bar-striped active' role='progressbar' style='width:" + roundPercent("spinda")+"%'>" + percentage("spinda") +  "% </div>  </div>" +
+                                                                       "<h2>Deoxys: " + stats("deoxys") + "</h2> <div class='progress'>    <div class='progress-bar progress-bar-striped active' role='progressbar' style='width:" + roundPercent("deoxys")+"%'>" + percentage("deoxys") +  "% </div>  </div>" +
+                                                                       "<h2>Unown: " + stats("unown") + "</h2> <div class='progress'>    <div class='progress-bar progress-bar-striped active' role='progressbar' style='width:" + roundPercent("unown")+"%'>" + percentage("unown") +  "% </div>  </div>";
+  } else if (page == 'lucky.html' || page == 'lucky') {
+    modalContent = "<h1>Pokedex Completion</h1> <h2>Normal: " + stats("dex") + "</h2> <div class='progress'>    <div class='progress-bar progress-bar-striped active' role='progressbar' style='width:" + roundPercent("dex")+"%'>" + percentage("dex") +  "% </div>  </div>" +
+                                                                       "<h2>Shiny: " + stats("shiny") + "</h2> <div class='progress'>    <div class='progress-bar progress-bar-striped active' role='progressbar' style='width:" + roundPercent("shiny")+"%'>" + percentage("shiny") +  "% </div>  </div>" +
+                                                                       "<h2>Special: " + stats("special") + "</h2> <div class='progress'>    <div class='progress-bar progress-bar-striped active' role='progressbar' style='width:" + roundPercent("special")+"%'>" + percentage("special") +  "% </div>  </div>" +
+                                                                       "<h2>Alolan: " + stats("alolan") + "</h2> <div class='progress'>    <div class='progress-bar progress-bar-striped active' role='progressbar' style='width:" + roundPercent("alolan")+"%'>" + percentage("alolan") +  "% </div>  </div>" +
+                                                                       "<h2>Spinda: " + stats("spinda") + "</h2> <div class='progress'>    <div class='progress-bar progress-bar-striped active' role='progressbar' style='width:" + roundPercent("spinda")+"%'>" + percentage("spinda") +  "% </div>  </div>" +
+                                                                       "<h2>Unown: " + stats("unown") + "</h2> <div class='progress'>    <div class='progress-bar progress-bar-striped active' role='progressbar' style='width:" + roundPercent("unown")+"%'>" + percentage("unown") +  "% </div>  </div>";
+  } else if (page == 'gender' || page == 'gender.html') {
+    modalContent = "<h1>Pokedex Completion</h1> <h2>Normal: " + stats("dex") + "</h2> <div class='progress'>    <div class='progress-bar progress-bar-striped active' role='progressbar' style='width:" + roundPercent("dex")+"%'>" + percentage("dex") +  "% </div>  </div>" +
+                                                                       "<h2>Alolan: " + stats("alolan") + "</h2> <div class='progress'>    <div class='progress-bar progress-bar-striped active' role='progressbar' style='width:" + roundPercent("alolan")+"%'>" + percentage("alolan") +  "% </div>  </div>" +
+                                                                       "<h2>Spinda: " + stats("spinda") + "</h2> <div class='progress'>    <div class='progress-bar progress-bar-striped active' role='progressbar' style='width:" + roundPercent("spinda")+"%'>" + percentage("spinda") +  "% </div>  </div>" +
+                                                                       "<h2>Genderless: " + stats("genderless") + "</h2> <div class='progress'>    <div class='progress-bar progress-bar-striped active' role='progressbar' style='width:" + roundPercent("genderless")+"%'>" + percentage("genderless") +  "% </div>  </div>";
+  }
+  document.getElementById("modalText").innerHTML = modalContent;
+  modal.style.display = "block";
 });
 function roundPercent(name) {
   return Math.round(percentage(name));

@@ -32,6 +32,7 @@
       <a href="gender" title="Gender"><i class="fas fa-restroom fa-lg"></i></a>
       <a href="lucky" title="Lucky"><i class="fas fa-star fa-lg"></i></a>
       <a id="toggleChecked" href="#" title="Hide"><i class="fas fa-eye-slash fa-lg"></i></a>
+      <a id="stats" href="#" title="Stats"><i class="fas fa-percent fa-lg"></i></a>
       <a id="export" href="#" title="Export"><i class="fas fa-file-export fa-lg"></i></a>
       <a id="import"href="#" title="Import"><i class="fas fa-file-import fa-lg"></i></a>
       <a href="support" title="Help"><i class="fas fa-question-circle fa-lg"></i></a>
@@ -39,6 +40,18 @@
       <a href="https://paypal.me/ndunajevs"title="PayPal" style="display:inline-block;"><i class="fas fa-donate fa-lg"></i></a>
     </div>
 </div>
+
+<div id="myProgress"><div id="barLabel"></div>
+  <div id="myBar"></div>
+</div>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="modalText" style="text-align: center;"></p>
+  </div>
+</div>
+
 
   <div class="jump">
     <a href="#gen1">Gen 1</a>
@@ -103,7 +116,7 @@
         <div class="sectionLabel" id="alolan">Alolan</div>
         <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.genderAlolan | filter:CDFilter">
           <label class="container" id="contalolan{{pokemon.id}}">
-            <input type="checkbox" id="alolan{{pokemon.id}}">
+            <input type="checkbox" name="alolan" id="alolan{{pokemon.id}}">
             <span class="checkmark"></span>
             <div class="pokemon-name">{{pokemon.name}}</div>
             <figure data-href="imgs/pokemon/{{pokemon.id}}.png" class="pokemon-image progressive replace"></figure>
@@ -115,7 +128,7 @@
         <div class="sectionLabel" id="spinda">Spinda Forms</div>
         <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.genderSpinda | filter:CDFilter">
           <label class="container" id="contspinda{{pokemon.id}}">
-            <input type="checkbox" id="spinda{{pokemon.id}}">
+            <input type="checkbox" name="spinda" id="spinda{{pokemon.id}}">
             <span class="checkmark"></span>
             <div class="pokemon-name">{{pokemon.name}}</div>
             <figure data-href="imgs/pokemon/{{pokemon.id}}.png" class="pokemon-image progressive replace"></figure>
@@ -127,7 +140,7 @@
         <div class="sectionLabel" id="genderless">Genderless</div>
         <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.genderless | filter:CDFilter">
           <label class="container" id="contgenderless{{pokemon.id}}">
-            <input type="checkbox" id="genderless{{pokemon.id}}">
+            <input type="checkbox" name="genderless" id="genderless{{pokemon.id}}">
             <span class="checkmark"></span>
             <div class="pokemon-name">{{pokemon.name}}</div>
             <figure data-href="https://www.serebii.net/pokemongo/pokemon/{{pokemon.id}}.png" class="pokemon-image progressive replace"></figure>
