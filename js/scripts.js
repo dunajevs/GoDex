@@ -2112,7 +2112,6 @@ var PokedexService = /** @class */ (function () {
             { "id": "410-f", "name": "Shieldon ♀" },
             { "id": "411-f", "name": "Bastiodon ♀" },
             { "id": "415-m", "name": "Combee ♂" },
-            { "id": "416-m", "name": "Vespiquen ♂" },
             { "id": "415-f", "name": "Combee ♀" },
             { "id": "416-f", "name": "Vespiquen ♀" },
             { "id": "417-m", "name": "Pachirisu ♂" },
