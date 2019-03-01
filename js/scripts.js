@@ -553,6 +553,7 @@ var PokedexService = /** @class */ (function () {
           { "id": "103-a", "name": "Exeggutor" },
           { "id": "105-a", "name": "Marowak" }];
         this.spinda = [{ "id": "327", "name": "#1" },
+          { "id": "327-2", "name": "#2" },
           { "id": "327-3", "name": "#3" },
           { "id": "327-5", "name": "#5" },
           { "id": "327-6", "name": "#6" },
@@ -1351,6 +1352,8 @@ var PokedexService = /** @class */ (function () {
           { "id": "105-a-f", "name": "Marowak ♀" }];
         this.genderSpinda = [{ "id": "327-m", "name": "#1 ♂" },
           { "id": "327-f", "name": "#1 ♀" },
+          { "id": "327-2-m", "name": "#2 ♂" },
+          { "id": "327-2-f", "name": "#2 ♀" },
           { "id": "327-3-m", "name": "#3 ♂" },
           { "id": "327-3-f", "name": "#3 ♀" },
           { "id": "327-5-m", "name": "#5 ♂" },
