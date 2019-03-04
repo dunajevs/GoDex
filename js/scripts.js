@@ -484,6 +484,7 @@ var PokedexService = /** @class */ (function () {
           { "id": "374", "name": "Beldum" },
           { "id": "375", "name": "Metang" },
           { "id": "376", "name": "Metagross" },
+          { "id": "380", "name": "Latias" },
           { "id": "382", "name": "Kyogre" },
           { "id": "383", "name": "Groudon" },
           { "id": "403", "name": "Shinx" },
