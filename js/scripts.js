@@ -185,6 +185,14 @@ function confirmation() {
   }
 }
 
+function confirmation100() {
+  if (confirm("Are you sure you want to reset?")) {
+    localStorage.removeItem("100-checked-checkboxes")
+     window.location.href ="/100"
+     window.scrollTo(0,0);
+  }
+}
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
