@@ -113,6 +113,30 @@
       </div>
 
       <div class="section">
+        <div class="sectionLabel" id="shiny">Shiny</div>
+        <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.genderShinies | orderBy:['id']:false | filter:CDFilter">
+          <label class="container" id="contshiny{{pokemon.id}}">
+            <input type="checkbox" name="shiny" id="shiny{{pokemon.id}}">
+            <span class="checkmark"></span>
+            <div class="pokemon-name">{{pokemon.name}}</div>
+            <figure data-href="imgs/pokemon/shiny{{pokemon.id}}.png" class="pokemon-image progressive replace"></figure>
+          </label>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="sectionLabel" id="special">Special</div>
+        <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.genderSpecial | filter:CDFilter">
+          <label class="container" id="contspecial{{pokemon.id}}">
+            <input type="checkbox" name="special" id="special{{pokemon.id}}">
+            <span class="checkmark"></span>
+            <div class="pokemon-name">{{pokemon.name}}</div>
+            <figure data-href="imgs/pokemon/{{pokemon.id}}.png" class="pokemon-image progressive replace"></figure>
+          </label>
+        </div>
+      </div>
+
+      <div class="section">
         <div class="sectionLabel" id="alolan">Alolan</div>
         <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.genderAlolan | filter:CDFilter">
           <label class="container" id="contalolan{{pokemon.id}}">
