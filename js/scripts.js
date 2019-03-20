@@ -480,6 +480,8 @@ var PokedexService = /** @class */ (function () {
           { "id": "326", "name": "Grumpig" },
           { "id": "333", "name": "Swablu" },
           { "id": "334", "name": "Altaria" },
+          { "id": "337", "name": "Lunatone" },
+          { "id": "338", "name": "Solrock" },
           { "id": "349", "name": "Feebas" },
           { "id": "350", "name": "Milotic" },
           { "id": "353", "name": "Shuppet" },
