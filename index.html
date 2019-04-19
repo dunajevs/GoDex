@@ -63,6 +63,7 @@
     <a href="#alolan">Alolan</a>
     <a href="#spinda">Spinda</a>
     <a href="#deoxys">Deoxys</a>
+    <a href="#giratina">Giratina</a>
     <a href="#unowns">Unown</a>
   </div>
 
@@ -180,6 +181,18 @@
       <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.deoxys | filter:CDFilter">
         <label class="container" id="contdeoxys{{pokemon.id}}">
           <input type="checkbox" name="deoxys" id="deoxys{{pokemon.id}}">
+          <span class="checkmark"></span>
+          <div class="pokemon-name">{{pokemon.name}}</div>
+          <figure data-href="https://www.serebii.net/pokemongo/pokemon/{{pokemon.id}}.png" class="pokemon-image progressive replace"></figure>
+        </label>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="sectionLabel" id="giratina">Giratina</div>
+      <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.giratina | filter:CDFilter">
+        <label class="container" id="contgiratina{{pokemon.id}}">
+          <input type="checkbox" name="giratina" id="giratina{{pokemon.id}}">
           <span class="checkmark"></span>
           <div class="pokemon-name">{{pokemon.name}}</div>
           <figure data-href="https://www.serebii.net/pokemongo/pokemon/{{pokemon.id}}.png" class="pokemon-image progressive replace"></figure>
