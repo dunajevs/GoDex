@@ -18,18 +18,18 @@
   <link rel="canonical" href="https://godex.online/national">
 
   <title>National | GoDex</title>
-  <meta name="description" content="GoDex is an online Pokedex checklist for Pokemon GO. Use it to keep track of your Pokemon collection outside of the game.">
+  <meta name="description" content="Online Pokedex checklist for Pokemon GO. Use it to keep track of your national Pokemon collection outside of the game.">
 
   <!-- twitter card data -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="GoDexOnline">
   <meta name="twitter:url" content="https://godex.online/national">
   <meta name="twitter:title" content="National | GoDex">
-  <meta name="twitter:description" content="GoDex is an online Pokedex checklist for Pokemon GO. Use it to keep track of your Pokemon collection outside of the game.">
+  <meta name="twitter:description" content="Online Pokedex checklist for Pokemon GO. Use it to keep track of your national Pokemon collection outside of the game.">
 
   <!-- open graph data -->
   <meta property="og:title" content="National | GoDex">
-  <meta property="og:description" content="GoDex is an online Pokedex checklist for Pokemon GO. Use it to keep track of your Pokemon collection outside of the game.">
+  <meta property="og:description" content="Online Pokedex checklist for Pokemon GO. Use it to keep track of your national Pokemon collection outside of the game.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://godex.online/national">
 
@@ -78,19 +78,21 @@
   </div>
 
   <div class="jump">
-    <a href="#national1">Gen 1</a>
-    <a href="#national2">Gen 2</a>
-    <a href="#national3">Gen 3</a>
-    <a href="#national4">Gen 4</a>
-    <a href="#mystery">Gen ?</a>
+    <a href="#kanto">Kanto</a>
+    <a href="#johto">Johto</a>
+    <a href="#hoenn">Hoenn</a>
+    <a href="#sinnoh">Sinnoh</a>
+    <a href="#unova">Unova</a>
+    <a href="#kalos">Kalos</a>
+    <a href="#alola">Alola</a>
   </div>
 
   <div class="wrapper" ng-cloak ng-app="app" ng-controller="PokedexController as pokedex">
     <div class="section">
-      <div class="sectionLabel" id="national1">Gen 1</div>
-      <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.national1 | orderBy:['id']:false | filter:CDFilter">
+      <div class="sectionLabel" id="kanto">Kanto</div>
+      <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.kanto | filter:CDFilter">
         <label class="container" id="cont{{pokemon.id}}">
-          <input type="checkbox" name="national" id="{{pokemon.id}}">
+          <input type="checkbox" name="kanto" id="{{pokemon.id}}">
           <span class="checkmark"></span>
           <div class="pokemon-name">#{{pokemon.id}} {{pokemon.name}}</div>
           <figure data-href="https://www.serebii.net/pokemongo/pokemon/{{pokemon.id}}.png" class="pokemon-image progressive replace"></figure>
@@ -98,51 +100,71 @@
       </div>
     </div>
 
-  <div class="wrapper" ng-cloak ng-app="app" ng-controller="PokedexController as pokedex">
     <div class="section">
-      <div class="sectionLabel" id="national2">Gen 2</div>
-      <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.national2 | orderBy:['id']:false | filter:CDFilter">
+      <div class="sectionLabel" id="johto">Johto</div>
+      <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.johto | filter:CDFilter">
         <label class="container" id="cont{{pokemon.id}}">
-          <input type="checkbox" name="national" id="{{pokemon.id}}">
+          <input type="checkbox" name="johto" id="{{pokemon.id}}">
           <span class="checkmark"></span>
           <div class="pokemon-name">#{{pokemon.id}} {{pokemon.name}}</div>
           <figure data-href="https://www.serebii.net/pokemongo/pokemon/{{pokemon.id}}.png" class="pokemon-image progressive replace"></figure>
         </label>
       </div>
     </div>
-
-  <div class="wrapper" ng-cloak ng-app="app" ng-controller="PokedexController as pokedex">
+    
     <div class="section">
-      <div class="sectionLabel" id="national3">Gen 3</div>
-      <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.national3 | orderBy:['id']:false | filter:CDFilter">
+      <div class="sectionLabel" id="hoenn">Hoenn</div>
+      <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.hoenn | filter:CDFilter">
         <label class="container" id="cont{{pokemon.id}}">
-          <input type="checkbox" name="national" id="{{pokemon.id}}">
+          <input type="checkbox" name="hoenn" id="{{pokemon.id}}">
           <span class="checkmark"></span>
           <div class="pokemon-name">#{{pokemon.id}} {{pokemon.name}}</div>
           <figure data-href="https://www.serebii.net/pokemongo/pokemon/{{pokemon.id}}.png" class="pokemon-image progressive replace"></figure>
         </label>
       </div>
     </div>
-
-  <div class="wrapper" ng-cloak ng-app="app" ng-controller="PokedexController as pokedex">
+    
     <div class="section">
-      <div class="sectionLabel" id="national4">Gen 4</div>
-      <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.national4 | orderBy:['id']:false | filter:CDFilter">
+      <div class="sectionLabel" id="sinnoh">Sinnoh</div>
+      <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.sinnoh | filter:CDFilter">
         <label class="container" id="cont{{pokemon.id}}">
-          <input type="checkbox" name="national" id="{{pokemon.id}}">
+          <input type="checkbox" name="sinnoh" id="{{pokemon.id}}">
           <span class="checkmark"></span>
           <div class="pokemon-name">#{{pokemon.id}} {{pokemon.name}}</div>
           <figure data-href="https://www.serebii.net/pokemongo/pokemon/{{pokemon.id}}.png" class="pokemon-image progressive replace"></figure>
         </label>
       </div>
     </div>
-
-  <div class="wrapper" ng-cloak ng-app="app" ng-controller="PokedexController as pokedex">
+    
     <div class="section">
-      <div class="sectionLabel" id="nationalm">???</div>
-      <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.nationalm | orderBy:['id']:false | filter:CDFilter">
+      <div class="sectionLabel" id="unova">Unova</div>
+      <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.unova | filter:CDFilter">
         <label class="container" id="cont{{pokemon.id}}">
-          <input type="checkbox" name="national" id="{{pokemon.id}}">
+          <input type="checkbox" name="unova" id="{{pokemon.id}}">
+          <span class="checkmark"></span>
+          <div class="pokemon-name">#{{pokemon.id}} {{pokemon.name}}</div>
+          <figure data-href="https://www.serebii.net/pokemongo/pokemon/{{pokemon.id}}.png" class="pokemon-image progressive replace"></figure>
+        </label>
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="sectionLabel" id="kalos">Kalos</div>
+      <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.kalos | filter:CDFilter">
+        <label class="container" id="cont{{pokemon.id}}">
+          <input type="checkbox" name="kalos" id="{{pokemon.id}}">
+          <span class="checkmark"></span>
+          <div class="pokemon-name">#{{pokemon.id}} {{pokemon.name}}</div>
+          <figure data-href="https://www.serebii.net/pokemongo/pokemon/{{pokemon.id}}.png" class="pokemon-image progressive replace"></figure>
+        </label>
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="sectionLabel" id="alola">Alola</div>
+      <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.alola | filter:CDFilter">
+        <label class="container" id="cont{{pokemon.id}}">
+          <input type="checkbox" name="alola" id="{{pokemon.id}}">
           <span class="checkmark"></span>
           <div class="pokemon-name">#{{pokemon.id}} {{pokemon.name}}</div>
           <figure data-href="https://www.serebii.net/pokemongo/pokemon/{{pokemon.id}}.png" class="pokemon-image progressive replace"></figure>
