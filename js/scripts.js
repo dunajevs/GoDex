@@ -42,9 +42,16 @@ $(document).ready(function () {
         document.getElementById(num).parentElement.style.display = 'none';
       }
     })
-    if (page == '' || page == 'index.html' || page == 'index' || page == 'lucky.html' || page == 'lucky' || page == '100.html'|| page == '100' || page == 'national.html'|| page == 'national' || page == 'gender' || page == 'gender.html') {
+    if (page == '' || page == 'index.html' || page == 'index' || page == 'lucky.html' || page == 'lucky' || page == '100.html'|| page == '100' || page == 'gender' || page == 'gender.html') {
       var checkedBoxes = document.querySelectorAll('input[name=dex]:checked');
       var pokemonNum = $('input[name=dex]').length;
+      var width = Math.round(checkedBoxes.length / pokemonNum * 10000) / 100;
+      document.getElementById("myBar").style.width = width + '%';
+      document.getElementById("barLabel").innerHTML = "Pokedex Completion: " + width * 1  + '%' + " | " + checkedBoxes.length + " / " + pokemonNum;
+    }
+    if (page == 'national.html'|| page == 'national') {
+      var checkedBoxes = document.querySelectorAll('input:checked');
+      var pokemonNum = $('input').length;
       var width = Math.round(checkedBoxes.length / pokemonNum * 10000) / 100;
       document.getElementById("myBar").style.width = width + '%';
       document.getElementById("barLabel").innerHTML = "Pokedex Completion: " + width * 1  + '%' + " | " + checkedBoxes.length + " / " + pokemonNum;
@@ -70,9 +77,16 @@ $(document).ready(function () {
     else {
       document.getElementById(num).style.backgroundColor = "#D3D3D3";
     }
-    if (page == '' || page == 'index.html' || page == 'index' || page == 'lucky.html' || page == 'lucky' || page == '100.html'|| page == '100' || page == 'national.html'|| page == 'national' || page == 'gender' || page == 'gender.html') {
+    if (page == '' || page == 'index.html' || page == 'index' || page == 'lucky.html' || page == 'lucky' || page == '100.html'|| page == '100'|| page == 'gender' || page == 'gender.html') {
       var checkedBoxes = document.querySelectorAll('input[name=dex]:checked');
       var pokemonNum = $('input[name=dex]').length;
+      var width = Math.round(checkedBoxes.length / pokemonNum * 10000) / 100;
+      document.getElementById("myBar").style.width = width + '%';
+      document.getElementById("barLabel").innerHTML = "Pokedex Completion: " + width * 1  + '%' + " | " + checkedBoxes.length + " / " + pokemonNum;
+    }
+    if (page == 'national.html'|| page == 'national') {
+      var checkedBoxes = document.querySelectorAll('input:checked');
+      var pokemonNum = $('input').length;
       var width = Math.round(checkedBoxes.length / pokemonNum * 10000) / 100;
       document.getElementById("myBar").style.width = width + '%';
       document.getElementById("barLabel").innerHTML = "Pokedex Completion: " + width * 1  + '%' + " | " + checkedBoxes.length + " / " + pokemonNum;
