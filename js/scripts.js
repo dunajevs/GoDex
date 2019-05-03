@@ -628,7 +628,8 @@ var PokedexService = /** @class */ (function () {
         { "id": "327-8", "name": "#8" },
         { "id": "327-9", "name": "#9" }];
       this.deoxys = [{ "id": "386", "name": "Normal" },
-        { "id": "386-a", "name": "Attack Forme" }];
+        { "id": "386-a", "name": "Attack Forme" },
+        { "id": "386-d", "name": "Defense Forme" }];
       this.giratina = [{ "id": "487", "name": "Altered Forme" },
         { "id": "487-o", "name": "Origin Forme" }];
       this.unowns = [{ "id": "201-a", "name": "A" },
