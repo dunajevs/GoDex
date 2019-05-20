@@ -13,7 +13,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- seo checklist -->
   <link rel="canonical" href="https://godex.online/lucky">
 
@@ -41,7 +41,7 @@
   <!-- favicons -->
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  
+
 </head>
 
 <body>
@@ -89,7 +89,8 @@
     <a href="#special">Special</a>
     <a href="#alolan">Alolan</a>
     <a href="#spinda">Spinda</a>
-    <a href="#unowns">Unowns</a>
+    <a href="#forms">Forms</a>
+    <a href="#unowns">Unown</a>
   </div>
 
   <div class="wrapper" ng-cloak ng-app="app" ng-controller="PokedexController as pokedex">
@@ -193,6 +194,56 @@
       <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.spinda | filter:CDFilter">
         <label class="container" id="contspinda{{pokemon.id}}">
           <input type="checkbox" name="spinda" id="spinda{{pokemon.id}}">
+          <span class="checkmark"></span>
+          <div class="pokemon-name">{{pokemon.name}}</div>
+          <figure data-href="https://www.serebii.net/pokemongo/pokemon/{{pokemon.id}}.png" class="pokemon-image progressive replace"></figure>
+        </label>
+      </div>
+    </div>
+
+
+    <div class="section">
+      <div class="sectionLabel">Giratina</div>
+      <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.giratina | filter:CDFilter">
+        <label class="container" id="contgiratina{{pokemon.id}}">
+          <input type="checkbox" name="giratina" id="giratina{{pokemon.id}}">
+          <span class="checkmark"></span>
+          <div class="pokemon-name">{{pokemon.name}}</div>
+          <figure data-href="https://www.serebii.net/pokemongo/pokemon/{{pokemon.id}}.png" class="pokemon-image progressive replace"></figure>
+        </label>
+      </div>
+    </div>
+
+
+    <div class="section">
+      <div class="sectionLabel" >Shellos</div>
+      <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.shellos | filter:CDFilter">
+        <label class="container" id="contshellos{{pokemon.id}}">
+          <input type="checkbox" name="shellos" id="shellos{{pokemon.id}}">
+          <span class="checkmark"></span>
+          <div class="pokemon-name">{{pokemon.name}}</div>
+          <figure data-href="https://www.serebii.net/pokemongo/pokemon/{{pokemon.id}}.png" class="pokemon-image progressive replace"></figure>
+        </label>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="sectionLabel" >Cherrim</div>
+      <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.cherrim | filter:CDFilter">
+        <label class="container" id="contcherrim{{pokemon.id}}">
+          <input type="checkbox" name="cherrim" id="cherrim{{pokemon.id}}">
+          <span class="checkmark"></span>
+          <div class="pokemon-name">{{pokemon.name}}</div>
+          <figure data-href="https://www.serebii.net/pokemongo/pokemon/{{pokemon.id}}.png" class="pokemon-image progressive replace"></figure>
+        </label>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="sectionLabel" >Burmy</div>
+      <div class="columns" ng-repeat="pokemon in pokedex.pokedexService.burmy | filter:CDFilter">
+        <label class="container" id="contburmy{{pokemon.id}}">
+          <input type="checkbox" name="burmy" id="burmy{{pokemon.id}}">
           <span class="checkmark"></span>
           <div class="pokemon-name">{{pokemon.name}}</div>
           <figure data-href="https://www.serebii.net/pokemongo/pokemon/{{pokemon.id}}.png" class="pokemon-image progressive replace"></figure>
